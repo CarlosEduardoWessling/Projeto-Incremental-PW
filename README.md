@@ -1,4 +1,4 @@
-# Site pessoal — Seu Nome
+# Site pessoal — Carlos
 
 **Aluno:** Carlos Eduardo Wessling  
 **Objetivo:** Desenvolver um site pessoal de forma incremental, começando com HTML puro e evoluindo para CSS e layout responsivo.
