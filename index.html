@@ -3,61 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site pessoal de um estudante de Engenharia de Software.">
-    <title>Site Pessoal | Carlos </title>
+    <meta name="description" content="Site pessoal de Carlos Eduardo Wessling, estudante de Engenharia de Software.">
+    <title>Site Pessoal | Carlos Eduardo Wessling</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="inicio">
-        <h1>Carlos Eduardo Wessling</h1>
-        <p>Estudante de Engenharia de Software</p>
-
-        <nav aria-label="Navegação principal">
-            <a href="#sobre">Sobre mim</a> |
-            <a href="#formacao">Formação</a> |
-            <a href="#projetos">Projetos</a> |
-            <a href="#habilidades">Habilidades</a> |
-            <a href="#contato">Contato</a>
-        </nav>
+        <div class="cabecalho-conteudo">
+            <h1>Carlos Eduardo Wessling</h1>
+            <p>Estudante de Engenharia de Software</p>
+            <nav aria-label="Navegação principal">
+                <a href="#sobre">Sobre mim</a>
+                <a href="#formacao">Formação</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section aria-labelledby="apresentacao-titulo">
-            <h2 id="apresentacao-titulo">Olá! Bem-vindo ao meu site de apresentação.</h2>
-            <p>Sou estudante de Engenharia de Software e estou desenvolvendo meus conhecimentos em programação, desenvolvimento web e tecnologia.</p>
-            <img src="imagem/carlos.png" alt="Imagem pessoal de Carlos" width="300" height="180">
-            <p><small>Fonte: Imagem pessoal, com edição de fundo por IA (ChatGPT)</small></p>
+        <section class="apresentacao" aria-labelledby="apresentacao-titulo">
+            <div class="apresentacao-conteudo">
+                <div class="apresentacao-texto">
+                    <h2 id="apresentacao-titulo">Olá! Bem-vindo ao meu site de apresentação.</h2>
+                    <p>Sou estudante de Engenharia de Software e estou desenvolvendo meus conhecimentos em programação, desenvolvimento web e tecnologia.</p>
+                </div>
+                <figure>
+                    <img src="imagem/carlos.png" alt="Imagem pessoal de Carlos" width="360" height="450">
+                    <figcaption>Fonte: Imagem pessoal, com edição de fundo feito por IA (ChatGPT).</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section id="sobre">
             <h2>Sobre mim</h2>
-            <p>Olá! Meu nome é Carlos Eduardo Wessling e sou estudante de Engenharia de Software. 
-                Pequeno sonhador nascido em Joinville - SC, crescido em Salto do Lontra - PR e atualmente morando em Dois Vizinhos por motivos de trabalho e estudo. 
-                Atualmente, trabalho na CISS, onde tenho a oportunidade de desenvolver minha experiência profissional e adquirir novos conhecimentos, mas, também trabahei na Cooperativa Coasul por anos o que mais me audou a desenvolver profissionalmente.
-                Gosto bastante de tecnologia, programação e de entender como os sistemas funcionam. 
-                Durante a faculdade, venho ampliando meus conhecimentos e colocando em prática o que aprendo. 
-                Fora do ambiente profissional e acadêmico, sou apaixonado por carros, games e tudo que envolve tecnologia. 
+            <p>Olá! Meu nome é Carlos Eduardo Wessling e sou estudante de Engenharia de Software.
+                Pequeno sonhador nascido em Joinville - SC, crescido em Salto do Lontra - PR e atualmente morando em Dois Vizinhos por motivos de trabalho e estudo.
+                Atualmente, trabalho na CISS, onde tenho a oportunidade de desenvolver minha experiência profissional e adquirir novos conhecimentos. Também trabalhei na Cooperativa Coasul por anos, o que me ajudou a desenvolver minhas habilidades profissionais.
+                Gosto bastante de tecnologia, programação e de entender como os sistemas funcionam.
+                Durante a faculdade, venho ampliando meus conhecimentos e colocando em prática o que aprendo.
+                Fora do ambiente profissional e acadêmico, sou apaixonado por carros, games e tudo que envolve tecnologia.
                 Gosto de aprender coisas novas e estou sempre buscando evoluir pessoal e profissionalmente.</p>
-            <p>Este site também é um projeto de aprendizagem: ele será aprimorado em etapas usando HTML, CSS e técnicas de layout responsivo.</p>
+            <p>Este site também é um projeto de aprendizagem: ele foi aprimorado em etapas usando HTML, CSS e técnicas de layout responsivo.</p>
         </section>
 
         <section id="formacao">
             <h2>Formação acadêmica</h2>
             <h3>Engenharia de Software</h3>
-            <p>Graduação em andamento, atualmente no 4° semestre do curso de Engenharia de Software na Universidade Tecnológica Federal do Paraná.</p>
+            <p>Graduação em andamento, atualmente no 4º semestre do curso de Engenharia de Software na Universidade Tecnológica Federal do Paraná.</p>
             <p>Áreas de estudo: algoritmos, programação, banco de dados, redes e sistemas operacionais.</p>
         </section>
 
         <section id="projetos">
             <h2>Projetos e interesses</h2>
-            <article>
-                <h3>Sistema de agendamento para barbearia</h3>
-                <p>Proposta acadêmica de um sistema para organizar horários, serviços e agendamentos de clientes.</p>
-            </article>
-            <article>
-                <h3>Plataforma de estudos para concursos de TI</h3>
-                <p>Ideia de uma plataforma de apoio aos estudos, com foco em conteúdos da área de tecnologia.</p>
-            </article>
+            <div class="projetos-grid">
+                <article>
+                    <h3>Sistema de agendamento para barbearia</h3>
+                    <p>Proposta acadêmica de um sistema para organizar horários, serviços e agendamentos de clientes.</p>
+                </article>
+                <article>
+                    <h3>Plataforma de estudos para concursos de TI</h3>
+                    <p>Ideia de uma plataforma de apoio aos estudos, com foco em conteúdos da área de tecnologia.</p>
+                </article>
+            </div>
             <p>Também tenho interesse em segurança da informação, desenvolvimento web e resolução de problemas com programação.</p>
         </section>
 
@@ -66,7 +75,7 @@
             <ul>
                 <li>Lógica de programação e algoritmos</li>
                 <li>Linguagem C</li>
-                <li>Java e Javascript</li>
+                <li>Java e JavaScript</li>
                 <li>SQL e bancos de dados</li>
                 <li>HTML e CSS</li>
             </ul>
@@ -77,22 +86,22 @@
             <p>Você pode conhecer mais sobre meus estudos e projetos pelos links abaixo:</p>
             <ul>
                 <li><a href="https://github.com/CarlosEduardoWessling/Projeto-Incremental-PW" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <a href="https://www.instagram.com/carlosewessling/" target="_blank" rel="noopener noreferrer">Instagram (@carlosewessling)</a>
+                <li><a href="https://www.instagram.com/carlosewessling/" target="_blank" rel="noopener noreferrer">Instagram (@carlosewessling)</a></li>
             </ul>
-            <p>Os links acima devem ser substituídos pelos endereços dos seus perfis pessoais antes da entrega.</p>
 
             <h3>Envie uma mensagem</h3>
             <form>
                 <p>
-                    <label for="nome">Nome:</label><br>
-                    <input type="text" id="nome" name="nome" required>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" autocomplete="name" required>
                 </p>
                 <p>
-                    <label for="mensagem">Mensagem:</label><br>
-                    <textarea id="mensagem" name="mensagem" rows="5" cols="30" required></textarea>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
                 </p>
                 <button type="button">Enviar (demonstração)</button>
             </form>
+            <p class="form-aviso"><small>O formulário é demonstrativo e não envia dados.</small></p>
         </section>
     </main>
 
